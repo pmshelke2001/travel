@@ -20,9 +20,9 @@ scanner.addListener('scan', function(content) {
 
       // Update account balance
       
-      let accountBalance = 3000;
+//       let accountBalance = 3000;
       
-      //let accountBalance = parseFloat(localStorage.getItem('accountBalance'));
+      let accountBalance = parseFloat(localStorage.getItem('accountBalance'));
      
       accountBalance -= 30;
       localStorage.setItem('accountBalance', accountBalance.toFixed(2));
